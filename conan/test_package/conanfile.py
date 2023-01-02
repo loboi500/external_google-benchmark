@@ -1,19 +1,3 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-from conans import ConanFile, CMake
-import os
-
-
-class TestPackageConan(ConanFile):
-    settings = "os", "compiler", "build_type", "arch"
-    generators = "cmake"
-
-    def build(self):
-        cmake = CMake(self)
-        cmake.configure()
-        cmake.build()
-
-    def test(self):
-        bin_path = os.path.join("bin", "test_package")
-        self.run(bin_path, run_environment=True)
+version https://git-lfs.github.com/spec/v1
+oid sha256:96938d411f7e6e3a1851f135fa40322bc8ca95c91eb18c16d9a318a11ef9506b
+size 432

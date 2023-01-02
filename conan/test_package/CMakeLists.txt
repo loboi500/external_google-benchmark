@@ -1,10 +1,3 @@
-cmake_minimum_required(VERSION 2.8.11)
-project(test_package)
-
-set(CMAKE_VERBOSE_MAKEFILE TRUE)
-
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup()
-
-add_executable(${PROJECT_NAME} test_package.cpp)
-target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
+version https://git-lfs.github.com/spec/v1
+oid sha256:6f42e50314a2cff22c2e23600375c307abf81c51140b047a14e78c309f5883d9
+size 269
